@@ -72,3 +72,4 @@ example_assert_log.txt
 
 # Exclude
 !Scripts/premake
+.fork
