@@ -73,3 +73,8 @@ example_assert_log.txt
 # Exclude
 !Scripts/premake
 .fork
+# Framecraft 依赖由 link-framecraft.ps1 按本机生成
+node_modules/
+demos/**/node_modules/
+demos/**/out/
+demos/**/*.log

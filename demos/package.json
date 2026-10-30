@@ -1,0 +1,13 @@
+﻿{
+  "name": "@easycpp/demos",
+  "version": "0.1.0",
+  "private": true,
+  "description": "EasyC++ 教学演示动画（未渲染工程），基于 Framecraft",
+  "scripts": {
+    "link": "powershell -NoProfile -ExecutionPolicy Bypass -File ./link-framecraft.ps1",
+    "build:all": "pnpm -r build",
+    "start:for-loop": "pnpm --dir for-loop-animation start"
+  },
+  "packageManager": "pnpm@9",
+  "engines": { "node": ">=18" }
+}

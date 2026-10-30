@@ -1,0 +1,19 @@
+﻿{
+    "name":  "foreach-int-vs-ref-animation",
+    "version":  "2.0.0",
+    "private":  true,
+    "description":  "Foreach int vs int\u0026 visualization demo for EasyC++ course - Optimized version",
+    "scripts":  {
+                    "start":  "remotion studio",
+                    "build":  "remotion render",
+                    "dev":  "remotion studio",
+                    "preview":  "remotion preview"
+                },
+    "engines":  {
+                    "node":  "\u003e=16.0.0",
+                    "pnpm":  "\u003e=8.0.0"
+                },
+    "dependencies":  {
+                         "@framecraft/components":  "file:../../../../AITools/framecraft"
+                     }
+}
