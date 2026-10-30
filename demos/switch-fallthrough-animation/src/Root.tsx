@@ -4,7 +4,7 @@ import { SwitchFallthroughDemo } from "./SwitchFallthroughDemo";
 // 总时长：30fps × 11秒 = 330帧
 const TOTAL_DURATION = 330;
 
-export const RemotionRoot: React.FC = () => {
+export const RemotionRoot = () => {
   return (
     <>
       <Composition

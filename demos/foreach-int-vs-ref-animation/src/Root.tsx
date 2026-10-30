@@ -1,4 +1,4 @@
-﻿import { Composition } from "remotion";
+import { Composition } from "remotion";
 import { ForeachIntVsRefDemo } from "./ForeachIntVsRefDemo";
 import { STAGES } from "./config";
 
@@ -6,7 +6,7 @@ import { STAGES } from "./config";
 // （历史缺陷：这里写 540，配置排到 750，后段内容被截断）
 const TOTAL_DURATION = STAGES[STAGES.length - 1].end;
 
-export const RemotionRoot: React.FC = () => {
+export const RemotionRoot = () => {
   return (
     <>
       <Composition

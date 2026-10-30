@@ -18,6 +18,7 @@ export const COL = {
   cfBorder: "#3c3c3c",
   cfActive: "#007acc",
   ctrlClose: "#ff5f56",
+  warning: "#ff5f56",       // break/穿透警告用红
   ctrlMin: "#ffbd2e",
   ctrlMax: "#27ca3f",
 };

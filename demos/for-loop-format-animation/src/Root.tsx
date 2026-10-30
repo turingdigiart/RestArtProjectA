@@ -5,7 +5,7 @@ import { ForLoopFormatDemo } from "./ForLoopFormatDemo";
 // 所有组件出现后都会持续到末尾
 const TOTAL_DURATION = 540;
 
-export const RemotionRoot: React.FC = () => {
+export const RemotionRoot = () => {
   return (
     <>
       <Composition

@@ -53,7 +53,7 @@ const Num = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Punc = ({ children }: { children: React.ReactNode }) => (
-  <span style={{ color: COL.default }}>{children}</span>
+  <span style={{ color: COL.textDefault }}>{children}</span>
 );
 
 // 代码片段包装器 - 用于在激活时显示边框高亮
@@ -213,7 +213,7 @@ export const SwitchCaseDemo: React.FC = () => {
 
   // 颜色映射
   const C = [
-    COL.default,
+    COL.textDefault,
     COL.keyword,   // 1 - switch
     COL.enumName,  // 2 - 表达式
     COL.variable,  // 3 - case

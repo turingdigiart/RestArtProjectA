@@ -4,7 +4,7 @@ import { ForeachStructureDemo } from "./ForeachStructureDemo";
 // 总时长：30fps × 12秒 = 360帧
 const TOTAL_DURATION = 360;
 
-export const RemotionRoot: React.FC = () => {
+export const RemotionRoot = () => {
   return (
     <>
       <Composition

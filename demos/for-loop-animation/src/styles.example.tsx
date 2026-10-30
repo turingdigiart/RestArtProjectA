@@ -41,7 +41,7 @@ export const CodeFrame: React.FC<CodeFrameProps> = ({ filename, lines, width = '
           newParts.push(splits[i]);
           if (i < splits.length - 1) {
             // 选择颜色
-            let color = COLORS.syntax.default;
+            let color: string = COLORS.syntax.default;
             if (keyword === 'for' || keyword === 'if' || keyword === 'while') color = COLORS.syntax.keyword;
             else if (keyword === 'int' || keyword === 'char' || keyword === 'bool' || keyword === 'void') color = COLORS.syntax.type;
             else if (keyword === 'idx' || keyword === 'cout' || keyword === 'endl') color = COLORS.syntax.variable;

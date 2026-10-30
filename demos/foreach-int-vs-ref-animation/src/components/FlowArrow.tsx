@@ -25,7 +25,7 @@ export const FlowArrow: React.FC<FlowArrowProps> = ({
 
   // 动画虚线偏移
   const dashOffset = animated
-    ? interpolate(frame, [0, 60], [0, -20], { extrapolateRight: "loop" })
+    ? interpolate(frame, [0, 60], [0, -20], { extrapolateRight: "extend" })
     : 0;
 
   // 根据方向设置 SVG 尺寸

@@ -53,7 +53,7 @@ const Num = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Punc = ({ children }: { children: React.ReactNode }) => (
-  <span style={{ color: COL.default }}>{children}</span>
+  <span style={{ color: COL.textDefault }}>{children}</span>
 );
 
 // 代码片段包装器 - 用于在激活时显示边框高亮
@@ -213,7 +213,7 @@ export const ForeachStructureDemo: React.FC = () => {
 
   // 颜色映射
   const C = [
-    COL.default,
+    COL.textDefault,
     COL.keyword,   // 1 - for
     COL.enumName,  // 2 - 元素变量
     COL.variable,  // 3 - 数组

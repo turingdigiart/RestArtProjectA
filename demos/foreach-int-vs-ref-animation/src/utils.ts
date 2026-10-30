@@ -2,7 +2,7 @@
 // 工具函数
 // ============================================
 
-import { interpolate } from "remotion";
+import { interpolate, type ExtrapolateType } from "remotion";
 
 /**
  * 安全的插值函数
@@ -12,7 +12,7 @@ export const safeInterpolate = (
   frame: number,
   inputRange: number[],
   outputRange: number[],
-  options?: { extrapolateRight?: string; extrapolateLeft?: string }
+  options?: { extrapolateRight?: ExtrapolateType; extrapolateLeft?: ExtrapolateType }
 ): number => {
   return interpolate(frame, inputRange, outputRange, {
     extrapolateRight: options?.extrapolateRight ?? "clamp",

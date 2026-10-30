@@ -53,7 +53,7 @@ const Str = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Punc = ({ children }: { children: React.ReactNode }) => (
-  <span style={{ color: COL.default }}>{children}</span>
+  <span style={{ color: COL.textDefault }}>{children}</span>
 );
 
 // 代码片段包装器 - 用于高亮显示
@@ -465,7 +465,6 @@ export const SwitchFallthroughDemo: React.FC = () => {
                 active={currentLine === "line_state"}
                 color={C.state}
                 indent={32}
-                extra=""  // 不加 arrow 到右边
               >
                 <Id>ProjectState</Id> <Id>projState</Id> <Punc>= </Punc>
                 <CodePart active={showState} color={C.state}>

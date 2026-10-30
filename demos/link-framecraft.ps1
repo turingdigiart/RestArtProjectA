@@ -73,7 +73,8 @@ foreach ($p in $pkgs) {
   if ($Check) { continue }
 
   $obj.dependencies | Add-Member -NotePropertyName '@framecraft/components' -NotePropertyValue $dep -Force
-  ($obj | ConvertTo-Json -Depth 20) | Set-Content -LiteralPath $pj -Encoding UTF8
+  $json = $obj | ConvertTo-Json -Depth 20
+  [System.IO.File]::WriteAllText($pj, $json, (New-Object System.Text.UTF8Encoding($false)))
   $changed++
 }
 

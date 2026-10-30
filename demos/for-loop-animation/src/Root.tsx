@@ -1,7 +1,7 @@
-import {Composition} from 'remotion';
+import { Composition } from "remotion";
 import {ForLoopDemo} from './ForLoopDemo';
 
-export const RemotionRoot: React.FC = () => {
+export const RemotionRoot = () => {
 	return (
 		<>
 			<Composition

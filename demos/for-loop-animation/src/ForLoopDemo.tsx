@@ -40,7 +40,7 @@ export const ForLoopDemo: React.FC = () => {
 				for (let i = 0; i < splits.length; i++) {
 					newParts.push(splits[i]);
 					if (i < splits.length - 1) {
-						let color = COLORS_V2.syntax.default;
+						let color: string = COLORS_V2.syntax.default;
 						if (keyword === 'for' || keyword === 'if') color = COLORS_V2.syntax.keyword;
 						else if (keyword === 'int') color = COLORS_V2.syntax.type;
 						else if (keyword === 'idx' || keyword === 'cout' || keyword === 'endl') color = COLORS_V2.syntax.variable;
