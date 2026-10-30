@@ -2,34 +2,7 @@
 
 void template01()
 {
-	// initialized by each member
-	int arr[5]{ 1,10,100,1000,10000 };
-	int* ptr = arr;
-
-	std::cout << "output1:" << arr << std::endl;
-
-	std::cout << "output2:" << arr[0] << std::endl;
-	std::cout << "output3:" << *arr << std::endl;
-
-	std::cout << "output4:" << arr[1] << std::endl;
-	std::cout << "output5:" << *(arr + 1) << std::endl;
-
-	arr[0] = 9;
-	std::cout << "output6:" << *arr << std::endl;
-
-	*(arr + 1) = 98;
-	std::cout << "output7:" << arr[1] << std::endl;
-
-	int a = *arr;
-	a = 7;
-	std::cout << "output8:" << *arr << std::endl;
-
-	std::cout << std::endl;
-	std::cout << "output9:" << std::endl;
-
-	std::cout << "arr:" << arr << std::endl;
-	std::cout << "ptr:" << ptr << std::endl;
-	std::cout << "ptr+1:" << ptr + 1 << std::endl;
+	
 }
 
 void template02()
@@ -82,18 +55,6 @@ void template03()
 
 int main(int argc, const char* argv[])
 {
-	//std::cout << "----------------template01----------------" << std::endl;
-	//template01();
-
-	//std::cout << std::endl;
-
-	//std::cout << "----------------template02----------------" << std::endl;
-	//template02();
-
-	//std::cout << std::endl;
-
-	std::cout << "----------------template03----------------" << std::endl;
-	template03();
-
+	template01();
 	return 0;
 }
